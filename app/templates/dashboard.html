@@ -18,17 +18,16 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static',filename= 'img/apple-icon.png') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static',filename= 'img/favicon.png') }}">
   <title>
     Dashboard
   </title>
-  <!--     Fonts and icons     -->
+  <!--     Fonts and icons  -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-  <!-- Nucleo Icons -->
-  <!-- <link href="static/css/nucleo-icons.css" rel="stylesheet" /> -->
-  <!-- <link href="static/css/nucleo-svg.css" rel="stylesheet" /> -->
-  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <!-- CSS Files -->
   <link id="pagestyle" href="{{ url_for('static',filename='css/soft-ui-dashboard.css') }}" rel="stylesheet" />
@@ -39,12 +38,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
       navbar-scroll="true">
-
+      
       <!-- <div class="container-fluid py-1 px-3"> -->
-
       <h6 class="font-weight-bolder mb-0">Whatsapp Dashboard</h6>
-
-
       <!-- </div> -->
 
     </nav>
@@ -195,8 +191,8 @@
                   </div>
                 </div>
               </div>
-<!-- DONUT GRAPH END -->
-<!-- EMOJI ADDICTS  GRAPH START -->
+              <!-- DONUT GRAPH END -->
+              <!-- EMOJI ADDICTS  GRAPH START -->
             </div>
           </div>
         </div>
@@ -215,8 +211,8 @@
           </div>
         </div>
       </div>
-<!-- EMOJI ADDICTS  GRAPH END -->
-<!-- MORNING GRAPH START -->
+      <!-- EMOJI ADDICTS  GRAPH END -->
+      <!-- MORNING GRAPH START -->
       <div class="row mt-4">
         <div class="col-lg-5 mb-lg-0 mb-4">
           <div class="card">
@@ -232,8 +228,8 @@
                   </div>
                 </div>
               </div>
-<!-- MORNING GRAPH END -->
-<!-- LEAST ACTIVE GRAPH START-->
+              <!-- MORNING GRAPH END -->
+              <!-- LEAST ACTIVE GRAPH START-->
             </div>
           </div>
         </div>
@@ -252,8 +248,8 @@
           </div>
         </div>
       </div>
-<!-- LEAST ACTIVE GRAPH END-->
-<!-- NIGHT GRAPH START-->
+      <!-- LEAST ACTIVE GRAPH END-->
+      <!-- NIGHT GRAPH START-->
       <div class="row mt-4">
         <div class="col-lg-5 mb-lg-0 mb-4">
           <div class="card">
@@ -269,8 +265,8 @@
                   </div>
                 </div>
               </div>
-<!-- NIGHT GRAPH END-->
-<!-- ACTIVE MEMBER GRAPH START-->
+              <!-- NIGHT GRAPH END-->
+              <!-- ACTIVE MEMBER GRAPH START-->
             </div>
           </div>
         </div>
@@ -289,8 +285,8 @@
           </div>
         </div>
       </div>
-<!-- ACTIVE MEMBER GRAPH END-->
-<!-- TIME GRAPH START-->
+      <!-- ACTIVE MEMBER GRAPH END-->
+      <!-- TIME GRAPH START-->
       <div class="row mt-4">
         <div class="col-lg-5 mb-lg-0 mb-4">
           <div class="card">
@@ -326,8 +322,8 @@
           </div>
         </div>
       </div>
-<!-- TIME GRAPH END-->
-<!-- BUSY DAY GRAPH START-->
+      <!-- TIME GRAPH END-->
+      <!-- BUSY DAY GRAPH START-->
       <div class="row mt-4">
         <div class="col-lg-5 mb-lg-0 mb-4">
           <div class="card">
@@ -363,17 +359,19 @@
           </div>
         </div>
       </div>
-    <!-- MESSAGE OVER MONTHS GRAPH END-->
+      <!-- MESSAGE OVER MONTHS GRAPH END-->
 
       <footer class="footer pt-3">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
             <div class="col-lg-6 mb-lg-0 mb-4">
               <div class="copyright text-center text-sm text-muted text-lg-left">
-                © <script>
-                  document.write(new Date().getFullYear())
-                </script>,
-                made with <i class="fa fa-heart"></i> by
+                © <span id="copyright">
+                  <script>
+                    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+                  </script>
+                </span>
+                ,made with <i class="fa fa-heart"></i> by
                 <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
                 for a better web.
               </div>
@@ -402,11 +400,8 @@
     </div>
   </main>
   <!--   Core JS Files   -->
-  <script src="static/js/core/popper.min.js"></script>
-  <script src="static/js/core/bootstrap.min.js"></script>
-  <script src="static/js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="static/js/plugins/chartjs.min.js"></script>
-  <script src="static/js/plugins/Chart.extension.js"></script>
+  <script src="{{ url_for('static',filename='js/core/popper.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/core/bootstrap.min.js')}}"></script>
 
 
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->

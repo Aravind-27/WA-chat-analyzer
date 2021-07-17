@@ -22,7 +22,7 @@ def page_not_found(error):
 @app.route("/")
 def home():
     """Index Page"""
-    return render_template("sign-up.html")
+    return render_template("index.html")
 
 
 @app.route("/Sample/", methods=["POST"])
