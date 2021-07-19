@@ -1,22 +1,68 @@
-# [WA-chat-analyzer](https://wa-chat-analysis.herokuapp.com/)
+# [WhatsApp-Chat-Analyzer]
 
-This project is based on Climatune ,Brought to you by a partnership between AccuWeather and Spotify, Climatune aims to give us audiophiles an insight into how the weather affects what we listen to.
+> **You can view the working project [here](https://wa-chat-analysis.herokuapp.com/).**
 
-![](header.png)
 
- Through a yearlong study comparing 85 billion anonymized streams on Spotify in over 900 cities nationwide, AccuWeather and Spotify analyzed the impact weather has on the music people listen to. Conclusions included:
+![](index.png)
 
-• Sunny days typically encourage listening to happier and higher-energy music.
+![](Dashboard.png)
 
-• Rainy days bring lower-energy, sadder-sounding music with more acoustic vs. electronic sounds.
 
-• Snowy days encourage more instrumental music.
 
-However, there are some variations in weather/listening behavior based on location. For example, in the U.S.:
 
-• New York City and Philadelphia listeners are the most affected by bad weather; with residents of these cities substantially changing their listening when it rains.
+WhatsApp chat Analyzer is a WebApp where anyone either tech or non-tech person can analyze their WhatsApp chat data. With this,
+With this, you can get information such as
+ -----------------------
+- Emoji Distribution
+- Emoji Addicts (Top 6)
+- Early Birds (6am to 9am)
+- Least Active Members of the Group
+- Night Owls (11pm to 3am)
+- Most Active Members of the Group
+- Activity Over Whole Day
+- Overall Activity of the Group
+- Busiest Day of week
+- Total Messages over the month(s)
 
-• Chicagoans get excited by the rain and stream happier music.
+**Important: Don't worry, none of your data is stored.**
+
+## Getting Started
+
+
+**1.** Fork this repository.
+
+**2.** Clone the forked repository.
+
+**3.** Navigate to the project directory.
+
+**4.** Create a new branch.
+
+```bash
+git checkout -b <your_branch_name>
+```
+
+**5.** Make changes in source code.
+
+**6.** Stage your changes and commit
+
+```bash
+#Add changes to Index
+git add .
+
+#Commit to the local repo
+git commit -m "<your_commit_message>"
+```
+
+>CAUTION: Synch up your local repo with [original repo](https://github.com/pcsingh/WhatsApp-Chat-Analyzer) (Upstream) before pushing your commits.
+>This avoids unnecessary conflicts during the merge.
+
+**7.** Push your local commits to the remote repo.
+
+```bash
+git push -u origin <your_branch_name>
+```
+
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
 
 
 # Tech Stack:
@@ -44,21 +90,3 @@ which installs all the necessary dependencies.
 #### `python3 run.py`
 Run the app in the development mode.<br>
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
-
-
-## Contributing
-
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
-
