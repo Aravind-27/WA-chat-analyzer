@@ -10,8 +10,7 @@
 
 
 
-WhatsApp chat Analyzer is a WebApp where anyone either tech or non-tech person can analyze their WhatsApp chat data. With this,
-With this, you can get information such as
+WhatsApp chat Analyzer is a WebApp where anyone either tech or non-tech person can analyze their WhatsApp chat data. With this, you can get information such as
  -----------------------
 - Emoji Distribution
 - Emoji Addicts (Top 6)
